@@ -1,6 +1,8 @@
 const names = ['Edoardo', 'Simone', 'Francesco'];
 
 // Stampa in console tutti i nomi
+names.forEach(elem => console.log(elem));
+
 
 
 const people = [
@@ -10,12 +12,14 @@ const people = [
 ];
 
 // Stampa in console tutti i nomi
-
+people.forEach(thisPeople => console.log(thisPeople.name));
 
 const numbers = [2, 8, 4, 7, 2, 87];
 
 // Crea un nuovo array in cui tutti i numeri siano incrementati di 1
+const getNumberPlusOne = numbers.map(thisNumber => thisNumber+1)
 
+console.log(getNumberPlusOne);
 
 const posts = [
   { author: 'Marco', date: '12/3/2021', content: 'lorem ipsum...' },
@@ -26,11 +30,18 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 
+const getNameOfAuthor = posts.map(thisPost => thisPost.author);
+
+console.log(getNameOfAuthor);
+
 
 
 const nums = [2, 8, 4, 7, 12, 87];
 
 // Crea un array a partire dall'array nums, che abbia solo i numeri pari
+const getNumPari = nums.filter(thisNum => thisNum % 2 == 0)
+
+console.log(getNumPari);
 
 
 const pencils = [
@@ -47,6 +58,15 @@ const pencils = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le matite lunghe almeno 15cm. L'altro con le restanti.
+
+const getMatite15cm = pencils.filter(thisPencil => thisPencil.sizeInCm >= 15)
+
+console.log(getMatite15cm);
+
+const getMatiteMin15cm = pencils.filter(thisPencil => thisPencil.sizeInCm < 15)
+
+console.log(getMatiteMin15cm);
+
 
 
 
@@ -72,6 +92,9 @@ const students = [
 ];
 
 // Recupera i dati dello studente con id 2
+const getStudentId = students.find(thisStudent => thisStudent.id === 2);
+
+console.log(getStudentId);
 
 
 const students_2 = [
@@ -88,7 +111,7 @@ const students_2 = [
     classroom: '4A'
   },
   {
-	  id: 3
+	  id: 3,
     name: 'Luigi Banzi',
     age: 33,
     classroom: '5B'
@@ -96,3 +119,12 @@ const students_2 = [
 ];
 
 // Recuperare la classe dello studente Marco Lanci
+
+const getStudent = students_2.find(thisStudent => thisStudent.name === 'Marco Lanci');
+
+console.log(getStudent.classroom);
+
+for (let key in getStudent){
+  console.log(getStudent.classroom);
+}
+  
