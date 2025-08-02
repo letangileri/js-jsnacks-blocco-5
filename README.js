@@ -189,6 +189,8 @@ console.log(getcarsDiesel);
 const getcarsQualsiasi = car.filter(thisCar => thisCar.alimentazione != 'diesel' && thisCar.alimentazione != 'benzina' )
 console.log(getcarsQualsiasi);
 
+
+// with for
 const arr1 = [];
 const arr2 = [];
 const arr3 = [];
@@ -208,6 +210,8 @@ console.log(arr1);
 console.log(arr2);
 console.log(arr3);
 
+
+// with foreach
 const arr4 = [];
 const arr5 = [];
 const arr6 = [];
@@ -232,6 +236,12 @@ console.log(arr6);
 
 // Snack 2
 // A partire da un array di stringhe, crea un secondo array formattando le stringhe del primo array in minuscolo e con l’iniziale maiuscola.
+
+const arrStringhe = ['Luca', 'MARCO', 'GIOvanna', 'mirco'];
+
+const getArrStringhe = arrStringhe.map(thisElemStringhe => `${thisElemStringhe.charAt(0).toUpperCase()}${thisElemStringhe.slice(1).toLowerCase()}`);
+
+console.log(getArrStringhe);
 
 // Snack 3
 // Crea un array di oggetti che rappresentano degli animali.
