@@ -189,6 +189,26 @@ console.log(getcarsDiesel);
 const getcarsQualsiasi = car.filter(thisCar => thisCar.alimentazione != 'diesel' && thisCar.alimentazione != 'benzina' )
 console.log(getcarsQualsiasi);
 
+const arr1 = [];
+const arr2 = [];
+const arr3 = [];
+
+for (let i = 0; i < car.length; i++){
+  const thisCar = car[i];
+  if (thisCar.alimentazione == 'benzina'){
+    arr1.push(thisCar);
+  } else if (thisCar.alimentazione == 'diesel'){
+    arr2.push(thisCar);
+  } else {
+    arr3.push(thisCar);
+  }
+}
+
+console.log(arr1);
+console.log(arr2);
+console.log(arr3);
+
+
  
 
 
