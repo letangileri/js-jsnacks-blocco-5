@@ -208,6 +208,24 @@ console.log(arr1);
 console.log(arr2);
 console.log(arr3);
 
+const arr4 = [];
+const arr5 = [];
+const arr6 = [];
+car.forEach((thisCar)=>{
+  if (thisCar.alimentazione == 'benzina'){
+    arr4.push(thisCar);
+  } else if (thisCar.alimentazione == 'diesel'){
+    arr5.push(thisCar);
+  } else {
+    arr6.push(thisCar);
+  }
+})
+
+console.log(arr4);
+console.log(arr5);
+console.log(arr6);
+
+
 
  
 
