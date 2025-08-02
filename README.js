@@ -128,3 +128,81 @@ for (let key in getStudent){
   console.log(getStudent.classroom);
 }
   
+// Snack 1
+// Crea un array composto da 10 automobili.
+// Ogni oggetto automobile avrà le seguenti proprietà: marca, modello e alimentazione (benzina, diesel, gpl, elettrico, metano).
+// Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel secondo solo le auto a diesel, nel terzo il resto delle auto.
+// Infine stampa separatamente i 3 array.
+
+const car = [
+  {
+    marca: 'Toyota',
+    modello: 'Yaris',
+    alimentazione: 'elettrica'
+  },
+  {
+    marca: 'Nissan',
+    modello: 'Micra',
+    alimentazione: 'metano'
+  },  {
+    marca: 'Mercedes',
+    modello: 'GLC',
+    alimentazione: 'benzina'
+  },  {
+    marca: 'Fiat',
+    modello: 'Panda',
+    alimentazione: 'benzina'
+  },  {
+    marca: 'Fiat',
+    modello: '500',
+    alimentazione: 'elettrica'
+  },  {
+    marca: 'Audi',
+    modello: 'A1',
+    alimentazione: 'diesel'
+  },  {
+    marca: 'Dacia',
+    modello: 'Duster',
+    alimentazione: 'benzina'
+  },  {
+    marca: 'Toyota',
+    modello: 'Aigo',
+    alimentazione: 'benzina'
+  },  {
+    marca: 'Toyota',
+    modello: 'CHR',
+    alimentazione: 'elettrica'
+  },  {
+    marca: 'Fiat',
+    modello: 'Mito',
+    alimentazione: 'metano'
+  },
+]
+const getcarsBenzina = car.filter(thisCar => thisCar.alimentazione == 'benzina')
+
+console.log(getcarsBenzina);
+
+const getcarsDiesel = car.filter(thisCar => thisCar.alimentazione == 'diesel')
+
+console.log(getcarsDiesel);
+
+const getcarsQualsiasi = car.filter(thisCar => thisCar.alimentazione != 'diesel' && thisCar.alimentazione != 'benzina' )
+console.log(getcarsQualsiasi);
+
+ 
+
+
+// Snack 2
+// A partire da un array di stringhe, crea un secondo array formattando le stringhe del primo array in minuscolo e con l’iniziale maiuscola.
+
+// Snack 3
+// Crea un array di oggetti che rappresentano degli animali.
+// Ogni animale ha un nome, una famiglia e una classe.
+// Crea un nuovo array con la lista dei mammiferi
+
+
+// Snack 4
+// Crea un array di oggetti che rappresentano delle persone.
+// Ogni persona ha un nome, un cognome e un’età.
+
+// Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e cognome e l’indicazione se può guidare, in base all’età.
